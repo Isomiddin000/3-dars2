@@ -45,16 +45,18 @@ Route::prefix('profile')->group(function () {
 Route::prefix('products')->group(function () {
     Route::get('/', function () {
         return "Products List";
+        
     })->name('products.index');
 
 
     Route::get('/{id}', function ($id) {
+
         return "Product ID: {$id}";
     })->name('products.show');
 
 
     Route::get('/{id}/edit', function ($id) {
-        
+
         return "Edit Product ID: {$id}";
     })->name('products.edit');
 });
