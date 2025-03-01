@@ -6,6 +6,7 @@ Route::get('/',function(){
 
 Route::get('/city/{name}', function ($name) {
 
+    
     return "Welcome to {$name}!";
 })->name('city.show');
 
@@ -62,4 +63,3 @@ Route::get('/old-url', function () {
 Route::get('/new-url',function(){
 return "salom";
 });
-
